@@ -47,7 +47,7 @@ if (Meteor.isServer) {
         it('sends all public lists', function (done) {
           const collector = new PublicationCollector();
           collector.collect('lists.public', (collections) => {
-            chai.assert.equal(collections.Lists.length, 3);
+            chai.assert.equal(collections.Lists.length, 2);
             done();
           });
         });
